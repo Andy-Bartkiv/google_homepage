@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div id="page-container">
     <nav>
         <ul>
             <li><a class="sign-in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.ru/&ec=GAZAAQ" target="_top">Sign In</a></li>
@@ -16,30 +18,42 @@
         </ul>
     </nav>
 
-    <div id='logo'>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <div id="main-container">
+
+        <div id='logo'>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+
+        <div id='search-form'>
+            <form action="">
+                <input title='Search' type="text">
+            </form>
+        </div>
+
+        <div id='buttons'>
+            <form action="">
+                <input id='g-search' value='Google Search' type='submit'></input>
+                <input id='lucky' value="I'm Feeling Lucky" type='submit'></input>
+            </form>
+
+        </div>
+
     </div>
 
-    <div id='search-form'>
-        <form action="">
-            <input type="text">
-        </form>
-    </div>
 
-    <div id='buttons'>
-        <button>Google Search</button>
-        <button>I'm feeling Lucky</button>
-    </div>
-
-
-    <footer id='bottom links'>
-        <a href="#">Advertizing</a>
-        <a href="#">Business</a>
-        <a href="#">About</a>
-        <a href="#">How search works</a>
-        <a href="https://policies.google.com/privacy">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
+    <footer id='bottom-links'>
+        <div id="bl-left">
+            <a href="#">Advertizing</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="https://www.google.com/search/howsearchworks">How search works</a>
+           </div>
+        <div id="bl-right">
+            <a href="https://policies.google.com/privacy">Privacy</a>
+            <a href="https://policies.google.com/terms">Terms</a>
+            <a href="#">Settings</a>   
+        </div>
     </footer>
+</div>
 </body>
 </html>
